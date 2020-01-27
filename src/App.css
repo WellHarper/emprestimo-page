@@ -92,3 +92,15 @@ h1 {
   margin-bottom: 6px;
 }
 
+.principal {
+  background-color: #ffffff;
+  border: 1px solid #cbe6e1;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+
+.first-column {
+  padding-top: 30px;
+  margin-left:10px;
+}
+

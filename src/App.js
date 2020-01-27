@@ -31,9 +31,37 @@ function App() {
         <Col md={2} className="option">
         <Form.Check inline type="radio" id="check" name="option"/>
           <img className="icon" src='./control.svg' />
-          TODOS FLASHES
+         CONTROLE
         </Col>
       </Row>
+      <div className="principal">
+        <Row class="columns">
+        <Col md={6} className="first-column">
+          <Form>
+            <Row>
+              <Col md={6}>
+              <Form.Group>
+                <Form.Label>
+                  CPF
+                </Form.Label>
+                <Form.Control type="text"/>
+              </Form.Group>
+              </Col>
+              <Col md={6}>
+              <Form.Group>
+                <Form.Label>
+                  CEP
+                </Form.Label>
+                <Form.Control type="text"/>
+              </Form.Group>
+              </Col>
+            </Row>
+          </Form>
+        </Col>
+          
+        </Row>
+      </div>
+      
     </div>
   );
 }
