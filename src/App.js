@@ -20,17 +20,17 @@ function App() {
       <Row className="options">
         <Col md={6}>
           <Row>
-            <Col md className="option">
+            <Col className="option">
               <Form.Check inline type="radio" id="check" name="option"/>
               <img className="icon" src='./new.svg'/> 
               NOVO REGISTRO
             </Col>
-          <Col md className="option">
+          <Col className="option">
             <Form.Check inline type="radio" id="check" name="option"/>
             <img className="icon"  src="./report.svg"/>
             RELATÓRIO
           </Col>
-          <Col md className="option">
+          <Col className="option">
             <Form.Check inline type="radio" id="check" name="option"/>
             <img className="icon" src='./control.svg' />
           CONTROLE
@@ -70,12 +70,41 @@ function App() {
               </Form.Group>
               </Col>
             </Row>
+            <Row>
+              <Col md={6}>
+              <Form.Group>
+                <Form.Label>
+                  GÊNERO
+                </Form.Label>
+                <Form.Control as="select">
+                  <option selected disabled>--Escolha--</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </Form.Control>
+              </Form.Group>
+              </Col>
+              <Col md={6}>
+              <Form.Group>
+                  <Form.Label className="lab">DATA FINAL</Form.Label>
+                  <Form.Control type="date"/>
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <label>
+                      CLIENTE JÁ FAZ PARTE DO CLUBE
+                </label>
+                </Col>
+            </Row>
+            <Row>
+              <Col>
+              <span></span>
+              <span>CLIENTE DIAMANTE - SUPER SPOT CARTÃO</span>
+              </Col>
+            </Row>
           </Form>
         </Col>
-        <Col md={6}>
-
-        </Col>
-          
         </Row>
       </div>
       
