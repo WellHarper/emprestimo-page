@@ -80,7 +80,7 @@ h1 {
   margin-left: 5px;
   width: 150px;
   padding: 15px;
-  align-items: center;
+  text-align: center;
 }
 
 .option:first-child {

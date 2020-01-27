@@ -18,20 +18,24 @@ function App() {
         </Col>
       </Row>
       <Row className="options">
-        <Col md={2} className="option">
-        <Form.Check inline type="radio" id="check" name="option"/>
-          <img className="icon" src='./new.svg'/> 
-          NOVO REGISTRO
-        </Col>
-        <Col md={2} className="option">
-        <Form.Check inline type="radio" id="check" name="option"/>
-          <img className="icon"  src="./report.svg"/>
-          RELATÓRIO
-        </Col>
-        <Col md={2} className="option">
-        <Form.Check inline type="radio" id="check" name="option"/>
-          <img className="icon" src='./control.svg' />
-         CONTROLE
+        <Col md={6}>
+          <Row>
+            <Col md className="option">
+              <Form.Check inline type="radio" id="check" name="option"/>
+              <img className="icon" src='./new.svg'/> 
+              NOVO REGISTRO
+            </Col>
+          <Col md className="option">
+            <Form.Check inline type="radio" id="check" name="option"/>
+            <img className="icon"  src="./report.svg"/>
+            RELATÓRIO
+          </Col>
+          <Col md className="option">
+            <Form.Check inline type="radio" id="check" name="option"/>
+            <img className="icon" src='./control.svg' />
+          CONTROLE
+          </Col>
+          </Row>
         </Col>
       </Row>
       <div className="principal">
