@@ -104,3 +104,25 @@ h1 {
   margin-left:10px;
 }
 
+.cadeira {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.prod {
+  margin-top: 10px;
+  border: 1px solid #cbe6e1;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.lab {
+  color: #6b6a69;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.inputer {
+  background-color: #f9f9f9;
+}
+
