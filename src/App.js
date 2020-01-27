@@ -56,7 +56,20 @@ function App() {
               </Form.Group>
               </Col>
             </Row>
+            <Row>
+              <Col>
+                <Form.Group>
+                  <Form.Label>
+                    NOME
+                  </Form.Label>
+                  <Form.Control type="text"/>
+              </Form.Group>
+              </Col>
+            </Row>
           </Form>
+        </Col>
+        <Col md={6}>
+
         </Col>
           
         </Row>
