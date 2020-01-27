@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Row, Col, Form} from 'react-bootstrap';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row>
+        <Col md={{span: 2, offset:10}} className="avatar">
+          <span className="foto">FT</span>
+          <span id="name">Nome</span>
+        </Col>  
+      </Row>
+      <Row>
+        <Col className="title">
+          <h1>EMPRÉSTIMOS</h1>  
+          <span>Home/Empréstimos</span>
+        </Col>
+      </Row>
+      <Row className="options">
+        <Col md={2} className="option">
+        <Form.Check inline type="radio" id="check" name="option"/>
+          <img className="icon" src='./new.svg'/> 
+          NOVO REGISTRO
+        </Col>
+        <Col md={2} className="option">
+        <Form.Check inline type="radio" id="check" name="option"/>
+          <img className="icon"  src="./report.svg"/>
+          RELATÓRIO
+        </Col>
+        <Col md={2} className="option">
+        <Form.Check inline type="radio" id="check" name="option"/>
+          <img className="icon" src='./control.svg' />
+          TODOS FLASHES
+        </Col>
+      </Row>
     </div>
   );
 }
